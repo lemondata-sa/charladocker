@@ -1,6 +1,5 @@
 ## DOCKER
 
-[[_TOC_]]
 ## Presentación:
 https://docs.google.com/presentation/d/1HaeBBsPNwvtBoGIqUrA7ZAHyU1JzEOVrNxgGXvdbmgk/edit?usp=sharing
 
