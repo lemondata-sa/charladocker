@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  
+  mysql:
+    image: mysql:8.0.13
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: idi
+      MYSQL_USER: idi
+      MYSQL_PASSWORD: idi
+      MYSQL_ROOT_PASSWORD: root123
+    ports:
+      - 3306:3306
+    network_mode: bridge
+    restart: always
+    volumes:
+      - ./script/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ~/Docker/volumenes/mysql-prueba:/var/lib/mysql
